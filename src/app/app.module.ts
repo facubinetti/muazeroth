@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MuazerothInicioComponent } from './muazeroth-inicio/muazeroth-inicio.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MuazerothInicioComponent
   ],
   imports: [
     BrowserModule,

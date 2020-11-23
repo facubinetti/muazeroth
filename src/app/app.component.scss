@@ -1,0 +1,36 @@
+/*------BARRA DE NAVEGACION------*/
+
+.barranavegacion {
+    box-shadow: 0 10px 10px black;
+}
+
+
+/*------logo------*/
+
+#logo:hover {
+    text-shadow: 0 0 5px rgba(100, 0, 255, 1);
+    border-bottom: 2px solid white;
+}
+
+.botones p {
+    margin: auto;
+    line-height: 3rem;
+    font-family: "Girassol";
+}
+
+
+/* ------botones------ */
+
+.botones:hover {
+    text-shadow: 0 0 4px rgba(100, 0, 255, 1);
+    border-bottom: 2px solid white;
+}
+
+footer {
+    background-color: rgba(52, 58, 64, 0.7);
+    border-top: 2px solid rgba(100, 0, 255, 1);
+    height: 5rem;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+}

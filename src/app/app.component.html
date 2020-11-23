@@ -5,17 +5,17 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-        <a class="navbar-brand " id="logo" href="#">MU AZEROTH</a>
+        <a class="navbar-brand " id="logo" [routerLink]="['/']">MU AZEROTH</a>
         <div class="collapse navbar-collapse col" id="navbarSupportedContent">
             <div class="w-100">
                 <ul class=" navbar-nav  menunavegacion">
                     <li class="nav-item active  botones">
-                        <a class="nav-link " id="inicio" href="#">
+                        <a class="nav-link " id="inicio" [routerLink]="['/home']">
                             <p>Inicio</p>
                             <span class="sr-only ">(current)</span></a>
                     </li>
                     <li class="nav-item botones">
-                        <a class="nav-link " href="#">
+                        <a class="nav-link " [routerLink]="['/mushop']">
                             <p>Shop</p>
                         </a>
                     </li>
@@ -25,7 +25,7 @@
     </nav>
 </header>
 <div class="container-fluid" id="main-content">
-    <app-muazeroth-inicio></app-muazeroth-inicio>
+    <router-outlet></router-outlet>
 </div>
 <div class="row">
     <footer class="col">

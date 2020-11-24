@@ -1,0 +1,22 @@
+<div class="col justify-content-around mt-5">
+    <div class="card">
+        <img src={{set.image}} class="card-img-top" alt="{{set.name}}">
+        <div class="card-body">
+            <h5 class="card-title">{{set.name}}</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+                Clases:
+                <Span *ngFor="let class of set.pjclass">{{class}} - </Span>
+            </li>
+            <li class="list-group-item ">Stock: {{set.stock}}</li>
+            <li class="list-group-item ">Precio: {{set.precio}}</li>
+            <li class="list-group-item ">
+                <app-input-integer></app-input-integer>
+            </li>
+        </ul>
+        <div class="card-body ">
+            <a href="# " class="card-link ">Another link</a>
+        </div>
+    </div>
+</div>

@@ -7,6 +7,9 @@ import { MuazerothInicioComponent } from './muazeroth-inicio/muazeroth-inicio.co
 import { MuShopComponent } from './mu-shop/mu-shop.component';
 import { ShopListComponent } from './shop-list/shop-list.component';
 import { CartShopComponent } from './cart-shop/cart-shop.component';
+import { InputIntegerComponent } from './input-integer/input-integer.component';
+import { CardItemComponent } from './card-item/card-item.component';
+import { MyFilterPipe } from './filtropipe.pipe';
 
 @NgModule({
   declarations: [
@@ -14,13 +17,16 @@ import { CartShopComponent } from './cart-shop/cart-shop.component';
     MuazerothInicioComponent,
     MuShopComponent,
     ShopListComponent,
-    CartShopComponent
+    CartShopComponent,
+    InputIntegerComponent,
+    CardItemComponent,
+    MyFilterPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

@@ -1,11 +1,11 @@
 <div class="input-group">
     <div class="input-group">
         <div class="input-group-prepend">
-            <button class="btn btn-primary btn-sm">-</button>
+            <button [ngClass]="(max != 0) ? 'btn btn-primary btn-sm':'btn btn-secondary btn-sm'" [disabled]="max == 0" (click)="downQuantity()">-</button>
         </div>
-        <input type="text" class="text-center">
+        <input type="text" class="text-center" [disabled]="max == 0" [(ngModel)]="quantity" (keyup)="changeQuantity($event)">
         <div class="input-group-append">
-            <button class="btn btn-primary btn-sm">+</button>
+            <button [ngClass]="(max != 0) ? 'btn btn-primary btn-sm':'btn btn-secondary btn-sm'" [disabled]="max == 0" (click)="upQuantity()">+</button>
         </div>
     </div>
 </div>

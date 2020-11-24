@@ -10,6 +10,8 @@ import { CartShopComponent } from './cart-shop/cart-shop.component';
 import { InputIntegerComponent } from './input-integer/input-integer.component';
 import { CardItemComponent } from './card-item/card-item.component';
 import { MyFilterPipe } from './filtropipe.pipe';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { MyFilterPipe } from './filtropipe.pipe';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

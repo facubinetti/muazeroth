@@ -11,3 +11,12 @@ body {
     background-attachment: fixed;
     overflow: scroll;
 }
+
+.bordearticle {
+    text-align: center;
+    margin-top: 2rem;
+    width: 100%;
+    padding: .7rem;
+    box-shadow: 5px 0px 5px black;
+    border-bottom: .2rem solid rgba(100, 0, 255, 1);
+}

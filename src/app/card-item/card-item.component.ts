@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import {Set} from '../mu-shop/set'
+import { CartService } from '../cart.service';
+import {Set} from '../shop-list/set'
 
 @Component({
   selector: 'app-card-item',
@@ -9,9 +10,20 @@ import {Set} from '../mu-shop/set'
 export class CardItemComponent implements OnInit {
   @Input() set: Set;
   @Input() clase:string;
-  constructor() { }
+
+  sets: Set[] =[];
+  constructor(private cart: CartService) {}
 
   ngOnInit(): void {
   }
 
+  addToCart(tsets): void {
+    this.cart.addToCart(tsets);
+    tsets.stock -= tsets.quantity;
+    tsets.quantity = 0;
+  }
+
+  alertError(m: string) {
+    alert(m);
+  }
 }

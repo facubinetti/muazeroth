@@ -1,0 +1,24 @@
+.card {
+    height: 7rem;
+}
+
+.img-holder {
+    position: relative;
+    width: 100%;
+    padding-top: 80%;
+}
+
+.container-img {
+    overflow: hidden;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.container-img img {
+    height: 105%;
+    width: 100%;
+}

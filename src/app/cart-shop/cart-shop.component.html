@@ -1,1 +1,23 @@
-<p>cart-shop works!</p>
+<ul class="p-3">
+    <li>
+        <div *ngFor="let set of (cartList$ | async)">
+            <div class="card mt-3 d-flex">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="img-holder">
+                            <div class='container-img'>
+                                <img src={{set.image}} class="card-img img-fluid img-thumbnail imgcart" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="col text-center list-group list-group-flush">
+                        <div class="card-body">
+                            <h5 class="card-title"><span>Nombre: </span>{{set.name}}</h5>
+                            <p class="card-text"><span>Cantidad: </span>{{set.quantity}}</p>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
